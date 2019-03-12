@@ -8,11 +8,14 @@ March 11th, 2019
 Santander Customer Transaction Prediction (Kaggle Competition)
 
 ### Domain Background
+Financial services are at the cornerstone of the modern society opportunity value chain for indivuals and business. Santander is a bank 
+
+
 
 
 ### Problem Statement
 
-The goal of this project is to predict which type of transactions belongs each observation of the dataset.
+The goal of this project is to predict which type of transactions belongs each observation of the dataset and create a prototype of open source re-usable pipeline for the same type of problems. 
 
 ### Datasets and Inputs
 
@@ -25,24 +28,30 @@ _Input Data fields_
 
 There is no hint on the datasets on the meaning of the features so exploratory analysis on variable ranking and importance needs to be considered.
 
-### Solution Statementt
+### Solution Statement
 
-The solution will be predictions of each feature of the dataset.
+The solution for this project will consistist of the following : 
+
+1. The solution will be predictions of each feature of the dataset with the test set data submitted to the kaggle competion.
+2. A notebook depicting the solution process.
+3. A software protype of an ML system that will productionize the solution.
 
 ### Benchmark Model
 
-My benchmark model will be a simple logistic regression model with the existing variables.
+The benchmark model will be a simple logistic regression model trained from the training data .
 
 ### Evaluation Metrics
 
-Prediction results are evaluated on the area under the ROC curve metric as suggested by the competition .
+A set of metrics will be used to optimize and choose between the different modules. 
 
-The approach will be based on taking the score of the competition as evaluation.
+- AUC ROC curve metric ( as suggested in the official competition)
+- F1 Score 
+- Matthew correlation coefficient : {\displaystyle {\text{MCC}}={\frac {{\mathit {TP}}\times {\mathit {TN}}-{\mathit {FP}}\times {\mathit {FN}}}{\sqrt {({\mathit {TP}}+{\mathit {FP}})({\mathit {TP}}+{\mathit {FN}})({\mathit {TN}}+{\mathit {FP}})({\mathit {TN}}+{\mathit {FN}})}}}}
 
 ### Project Design
 
 #### Step 1 : Domain literature review
-Variables will be explored and analysed using Pandas and visualisations will be constructed using a suitable visualizatio tool like Seaborn.
+Look at relevant papers in the literature around techniques and applications on the domain of the problem.
 
 #### Step 2 : Exploratory Data Analysis
 Variables will be explored and analysed using Pandas and visualisations will be constructed using a suitable visualizatio tool like Seaborn.
@@ -71,4 +80,5 @@ A baseline model will be created using a very simple logistic regression model a
 
 ### Reference
 
-- [Kaggle](https://www.kaggle.com/c/santander-customer-transaction-prediction#evaluation)
+- [Kaggle](https://www.kaggle.com/c/santander-customer-transaction-prediction)
+- [Data Science Design Manual]
