@@ -30,8 +30,11 @@ There is no hint on the datasets on the meaning of the features so exploratory a
 The solution for this project will consistist of the following : 
 
 1. The solution will be predictions of each feature of the dataset with the test set data submitted to the kaggle competion.
-2. A notebook depicting the solution process.
-3. A software protype of an ML system that will productionize the solution.
+2. A notebook depicting the solution process as outlined by this process.
+3. A software protype of an ML system that will productionize the solution with the following features :
+         - Setup a new transaction pipeline pipeline 
+         - Setup training
+         - Productionize batch + api serving layer 
 
 ### Benchmark Model
 
@@ -48,7 +51,7 @@ A set of metrics will be used to optimize and choose between the different model
 ### Project Design
 
 #### Step 1 : Domain literature review
-Look at relevant papers in the literature around techniques and applications on the domain of the problem.
+Look at relevant papers in the literature around techniques and applications on the domain of the problem. 
 
 #### Step 2 : Exploratory Data Analysis
 Variables will be explored and analysed using Pandas and visualisations will be constructed using a suitable visualizatio tool like Seaborn.
@@ -60,23 +63,32 @@ Datasets will be checked for quality and issues including missing values , dupli
 A baseline model will be created using a very simple logistic regression model and the most important features.
 
 #### Step 5 : Feature analysis and exploration
+Feature importance and rankings will be made with the data to improve familiarty of the data.
             
 #### Step 6 : Iterate on model development :
-   For each method cross validation and hyparameter random search will be used to find the best model in class.
+For each method cross validation and hyparameter random search will be used to find the best model in class.
 
-      a. Evaluate tree based boosting methods ( GBM's, XGboost, Catboost).
-      b. Evaluate suitability of deep learning methods.
-      c. Explore most promising alternative.
-      d. Submit to Kaggle leader the most promising solution.
+      a. Evaluate tree based boosting methods (GBM's, XGboost, Catboost).
+      b. Evaluate distance methods (KNN's and SVMs).
+      c. Evaluate suitability of deep learning methods.
+      d. Explore most promising alternative.
+      e. Submit to Kaggle leader the most promising solution.
 
-#### Step 7 : Write final report and conclusions
-  Analyse and compare performance of different methods chosen on step 7. A generic prototype standalone pipeline system will be created that will accept unidenfied variables and allow for a Machine Learning API for transaction type prediction :
+#### Step 8 : Explore software tooling to aid on productionization of ML pipelines
+Tools like MLFlow and Kubeflow present themselves as possible aids to the delivery of Machine Learning solution and aiding significatively the Machine Learning Engineering process. Part of this project will involve evaluating this tools as tools to be used for the productionization of the current project. [4,5] 
+
+A generic prototype standalone pipeline system will be created that will accept unidenfied variables and allow for a Machine Learning API for transaction type prediction :
         - Trained 
         - Predicted with batch inference
         - Served with an API
+
+#### Step 9 : Write final report and conclusions
+Analyse and compare performance of different methods chosen on step 7. Final writeup of the project.
 
 ### Reference
 
 - [1] - Kaggle - (https://www.kaggle.com/c/santander-customer-transaction-prediction)
 - [2] - Wikipedia Matthews correlation coefficient - (https://en.wikipedia.org/wiki/Matthews_correlation_coefficient)
-- [3] - Steven S. Skiena - [Data Science Design Manual]
+- [3] - Steven S. Skiena -  The Data Science Design Manual, Springer, 2014
+- [4] - Databricks MLFlow -  https://mlflow.org/ 
+- [5] - Kubeflow - https://www.kubeflow.org/
