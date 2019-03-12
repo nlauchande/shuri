@@ -8,14 +8,11 @@ March 11th, 2019
 Santander Customer Transaction Prediction (Kaggle Competition)
 
 ### Domain Background
-Financial services are at the cornerstone of the modern society opportunity value chain for indivuals and business. Santander is a bank 
-
-
-
+Financial services are at the cornerstone of the modern society opportunity value chain for indivuals and business. Santander is a bank that thrives to know their customers better to serve them correctly. Part of providing the customers with the right financial choices is to be able to know and predict their desires [1] .
 
 ### Problem Statement
 
-The goal of this project is to predict which type of transactions belongs each observation of the dataset and create a prototype of open source re-usable pipeline for the same type of problems. 
+The goal of this project is to predict which type of transactions belongs each observation of the dataset and create a prototype of open source re-usable pipeline for binary classification of financial transactions given features for a customer and training data. 
 
 ### Datasets and Inputs
 
@@ -42,11 +39,11 @@ The benchmark model will be a simple logistic regression model trained from the 
 
 ### Evaluation Metrics
 
-A set of metrics will be used to optimize and choose between the different modules. 
+A set of metrics will be used to optimize and choose between the different models: 
 
-- AUC ROC curve metric ( as suggested in the official competition)
-- F1 Score 
-- Matthew correlation coefficient : {\displaystyle {\text{MCC}}={\frac {{\mathit {TP}}\times {\mathit {TN}}-{\mathit {FP}}\times {\mathit {FN}}}{\sqrt {({\mathit {TP}}+{\mathit {FP}})({\mathit {TP}}+{\mathit {FN}})({\mathit {TN}}+{\mathit {FP}})({\mathit {TN}}+{\mathit {FN}})}}}}
+- AUC ROC curve metric ( as suggested in the official competition) [2]
+- F1 Score [2]
+- Matthew correlation coefficient [3]
 
 ### Project Design
 
@@ -80,5 +77,6 @@ A baseline model will be created using a very simple logistic regression model a
 
 ### Reference
 
-- [Kaggle](https://www.kaggle.com/c/santander-customer-transaction-prediction)
-- [Data Science Design Manual]
+- [1] - Kaggle - (https://www.kaggle.com/c/santander-customer-transaction-prediction)
+- [2] - Wikipedia Matthews correlation coefficient - (https://en.wikipedia.org/wiki/Matthews_correlation_coefficient)
+- [3] - Steven S. Skiena - [Data Science Design Manual]
