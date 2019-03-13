@@ -29,6 +29,41 @@ _Input Data fields_
 - id - the id of a training/test set
 - var0..var199 - unitentified numeric features presented on the dataset.
 
+_Files provided_
+
+1. Training dataset:
+Description : Dataset to be used for training.
+Filename : train.csv
+Number of rows : 200000
+Number of collumns : 202 [id + target + var0..var199 ]
+Target Variable : 0 - Customer didn't make transaction 1 - Customer made transaction
+
+2. Test dataset
+Description : Dataset to be submitted .
+Filename : test.csv
+Number of rows : 200000
+Number of collumns : 201 [id + var0..var199 ]
+Target Variable : N/A
+
+3. Submission Sample
+Description : Sample dataset to be used during submission.
+Filename : sample.csv
+Number of rows : 200000
+Number of collumns : 2 [id + target ]
+Target Variable : 0 - Customer didn't make transaction 1 - Customer made transaction
+
+4. Target class distribution
+
+Target distribution ( Percentage Wise ) 
+0    0.89 %
+1    0.11 %
+
+Percentage distribution 
+0 +++++++++
+1 +
+
+A clear class imbalance issue with regards to the target need that needs to be addressed during modelling and data preparation phase.
+
 There is no hint on the datasets on the meaning of the features so exploratory analysis on variable ranking and importance needs to be considered.
 
 ### Solution Statement
@@ -38,7 +73,7 @@ The solution for this project will consistist of the following :
 1. The solution will be predictions of each feature of the dataset with the test set data submitted to the kaggle competion.
 2. A notebook depicting the solution process as outlined by this process.
 3. A software protype of an ML system that will productionize the solution with the following features :
-         - Setup a new transaction pipeline pipeline 
+         - Setup a new transaction prediction pipeline 
          - Setup training
          - Productionize batch + api serving layer 
 
@@ -72,6 +107,8 @@ A baseline model will be created using a very simple logistic regression model a
 Feature importance and rankings will be made with the data to improve familiarty of the data.
             
 #### Step 6 : Iterate on model development :
+As noticed before the training dataset suffers from class imbalance that needs to be addressed during model iteration and taken into consideration by mitigating using the most appropriate strategies(example : Smote, sampling, penalties, etc.).
+
 For each method cross validation and hyparameter random search will be used to find the best model in class.
 
       a. Evaluate tree based boosting methods (GBM's, XGboost, Catboost).
