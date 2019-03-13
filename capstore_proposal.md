@@ -44,7 +44,8 @@ _Files provided_
    Target Variable : 0 - Customer didn't make transaction 1 - Customer made transaction
 
 2. **Test dataset**
-   Description : Dataset to be submitted .
+
+   Description : Dataset to be submitted.
    
    Filename : test.csv
    
