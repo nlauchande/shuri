@@ -31,7 +31,7 @@ _Input Data fields_
 
 _Files provided_
 
-1. *Training dataset*:
+1. **Training dataset
 
    Description : Dataset to be used for training.
    
@@ -43,7 +43,7 @@ _Files provided_
    
    Target Variable : 0 - Customer didn't make transaction 1 - Customer made transaction
 
-2. Test dataset
+2. **Test dataset
    Description : Dataset to be submitted .
    
    Filename : test.csv
@@ -54,7 +54,7 @@ _Files provided_
    
    Target Variable : N/A
 
-3. Submission Sample
+3. **Submission Sample
    Description : Sample dataset to be used during submission.
    
    Filename : sample.csv
@@ -65,7 +65,7 @@ _Files provided_
    
    Target Variable : 0 - Customer didn't make transaction 1 - Customer made transaction
 
-4. Target class distribution
+4. **Target class distribution
 
       Target distribution ( Percentage Wise ) 
 
@@ -77,7 +77,8 @@ _Files provided_
          0 +++++++++ (~90%) 
          1 + (~1%)
 
-A clear class imbalance issue with regards to the target need that needs to be addressed during modelling and data preparation phase.
+     A clear class imbalance issue with regards to the target need that needs to be addressed during modelling and data            preparation phase.
+
 
 There is no hint on the datasets on the meaning of the features so exploratory analysis on variable ranking and importance needs to be considered.
 
