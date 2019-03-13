@@ -10,6 +10,12 @@ Santander Customer Transaction Prediction (Kaggle Competition)
 ### Domain Background
 Financial services are at the cornerstone of the modern society opportunity value chain for indivuals and business. Santander is a bank that thrives to know their customers better to serve them correctly. Part of providing the customers with the right financial choices is to be able to know and predict their desires [1] .
 
+The topic of this project is to predict if bank customers will make a specific transaction in the future based on a set of a 
+features.  Predicting customer propensity/suitability for transaction or willigness is paramount on bringing inclusion and low cost financial services for underprivilliged communities [6] . 
+
+Predicting if a customer for instance will make a specific transaction might help the financial institution provision resources if it makes business sense  . A special important application of predicting transaction is in the context of financial fraud . Having a performant transaction fraud detection system can lower financial risk for institutions [7].
+
+
 ### Problem Statement
 
 The goal of this project is to predict which type of transactions belongs each observation of the dataset and create a prototype of open source re-usable pipeline for binary classification of financial transactions given features for a customer and training data. 
@@ -92,3 +98,5 @@ Analyse and compare performance of different methods chosen on step 7. Final wri
 - [3] - Steven S. Skiena -  The Data Science Design Manual, Springer, 2014
 - [4] - Databricks MLFlow -  https://mlflow.org/ 
 - [5] - Kubeflow - https://www.kubeflow.org/
+- [6] - Zhang. E. et al - Financial Forecasting and Analysis for Low-Wage Workers - arXiv:1806.05362v3 , 2018
+- [7] - Zheng. X et al - FinBrain: When Finance Meets AI 2.0* -Front Inform Technol Electron Eng , 2010 https://arxiv.org/pdf/1808.08497.pdf , 
