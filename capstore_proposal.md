@@ -34,23 +34,35 @@ _Files provided_
 1. *Training dataset*:
 
    Description : Dataset to be used for training.
+   
    Filename : train.csv
+   
    Number of rows : 200000
+   
    Number of collumns : 202 [id + target + var0..var199 ]
+   
    Target Variable : 0 - Customer didn't make transaction 1 - Customer made transaction
 
 2. Test dataset
    Description : Dataset to be submitted .
+   
    Filename : test.csv
+   
    Number of rows : 200000
+   
    Number of collumns : 201 [id + var0..var199 ]
+   
    Target Variable : N/A
 
 3. Submission Sample
    Description : Sample dataset to be used during submission.
+   
    Filename : sample.csv
+   
    Number of rows : 200000
+   
    Number of collumns : 2 [id + target ]
+   
    Target Variable : 0 - Customer didn't make transaction 1 - Customer made transaction
 
 4. Target class distribution
