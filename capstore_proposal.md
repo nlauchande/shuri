@@ -31,7 +31,7 @@ _Input Data fields_
 
 _Files provided_
 
-1. **Training dataset
+1. **Training dataset**
 
    Description : Dataset to be used for training.
    
