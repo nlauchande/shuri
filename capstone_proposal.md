@@ -150,7 +150,8 @@ Analyse and compare performance of different methods chosen on step 7. Final wri
 ### Reference
 
 - [1] - Kaggle - (https://www.kaggle.com/c/santander-customer-transaction-prediction)
-- [2] - Wikipedia Matthews correlation coefficient - (https://en.wikipedia.org/wiki/Matthews_correlation_coefficient)
+- [2] - Wikipedia Matthews correlation coefficient - 
+       (https://en.wikipedia.org/wiki/Matthews_correlation_coefficient)
 - [3] - Steven S. Skiena -  The Data Science Design Manual, Springer, 2014
 - [4] - Databricks MLFlow -  https://mlflow.org/, 2019
 - [5] - Kubeflow - https://www.kubeflow.org/, 2019
