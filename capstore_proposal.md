@@ -43,7 +43,7 @@ _Files provided_
    
    Target Variable : 0 - Customer didn't make transaction 1 - Customer made transaction
 
-2. **Test dataset
+2. **Test dataset**
    Description : Dataset to be submitted .
    
    Filename : test.csv
@@ -54,7 +54,8 @@ _Files provided_
    
    Target Variable : N/A
 
-3. **Submission Sample
+3. **Submission Sample**
+
    Description : Sample dataset to be used during submission.
    
    Filename : sample.csv
@@ -65,7 +66,7 @@ _Files provided_
    
    Target Variable : 0 - Customer didn't make transaction 1 - Customer made transaction
 
-4. **Target class distribution
+4. **Target class distribution**
 
       Target distribution ( Percentage Wise ) 
 
@@ -123,7 +124,8 @@ A baseline model will be created using a very simple logistic regression model a
 Feature importance and rankings will be made with the data to improve familiarty of the data.
             
 #### Step 6 : Iterate on model development :
-As noticed before the training dataset suffers from class imbalance that needs to be addressed during model iteration and taken into consideration by mitigating using the most appropriate strategies(example : Smote, sampling, penalties, etc.).
+
+As noticed before the training dataset suffers from class imbalance that needs to be addressed during model iteration and taken into consideration by mitigating using the most appropriate strategies(example : Smote, sampling, penalties, etc.)[8].
 
 For each method cross validation and hyparameter random search will be used to find the best model in class.
 
@@ -149,7 +151,8 @@ Analyse and compare performance of different methods chosen on step 7. Final wri
 - [1] - Kaggle - (https://www.kaggle.com/c/santander-customer-transaction-prediction)
 - [2] - Wikipedia Matthews correlation coefficient - (https://en.wikipedia.org/wiki/Matthews_correlation_coefficient)
 - [3] - Steven S. Skiena -  The Data Science Design Manual, Springer, 2014
-- [4] - Databricks MLFlow -  https://mlflow.org/ 
-- [5] - Kubeflow - https://www.kubeflow.org/
+- [4] - Databricks MLFlow -  https://mlflow.org/, 2019
+- [5] - Kubeflow - https://www.kubeflow.org/, 2019
 - [6] - Zhang. E. et al - Financial Forecasting and Analysis for Low-Wage Workers - arXiv:1806.05362v3 , 2018
 - [7] - Zheng. X et al - FinBrain: When Finance Meets AI 2.0* -Front Inform Technol Electron Eng , 2010 https://arxiv.org/pdf/1808.08497.pdf , 
+- [8] - Brownlee J - https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/ - 2019
