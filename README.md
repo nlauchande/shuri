@@ -17,8 +17,9 @@ Pre-requisites : A gmail account to be able to use Google Colab and a Kaggle acc
 4. Select the section Github
 5. Type the following URL : https://github.com/nlauchande/shuri/
 6. Select the notebook final_report final_report.ipynb
-7. Click on Runtime->Run all 
-8. You need to upload your kaggle API token on the first section of the notebook. Instructions on how to setup a Kaggle API token can be seen in here : https://www.kaggle.com/docs/api 
+8. The default hardware of Google Colab is CPU or it can be GPU. . Click on ‘Edit’ > ‘Notebook Settings’ > ‘Hardware Accelerator’ > ‘GPU’ to enable it.
+8. Click on Runtime->Run all 
+9. You need to upload your kaggle API token on the first section of the notebook. Instructions on how to setup a Kaggle API token can be seen in here : https://www.kaggle.com/docs/api 
 
 
 Project Organization
